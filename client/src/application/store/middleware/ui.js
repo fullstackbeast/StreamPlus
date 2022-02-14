@@ -6,8 +6,6 @@ const pageLoadedFlow = ({ log }) => ({ dispatch }) => next => action => {
     if (action.type === PAGE_LOADED) {
         log('page loaded');
     }
-
-  
 }
 
 

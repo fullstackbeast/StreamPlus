@@ -1,5 +1,6 @@
-import consoleLogger from './logger/console';
-import elasticSearchLogger from './logger/elastic-search';
+import consoleLogger from '../../infrastructure/logger/console';
+import elasticSearchLogger from '../../infrastructure/logger/elastic-search';
+
 
 
 // const env = 'development';

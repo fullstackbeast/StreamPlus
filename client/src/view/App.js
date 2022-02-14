@@ -1,7 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
-import { setLoading } from "./application/actions/ui";
-import { getLoadingState } from "./application/selectors/ui";
+import { setLoading } from "../application/store/actions/ui";
+import { getLoadingState } from "../application/store/selectors/ui";
 
+import './App.css';
 
 const App = () => {
 
@@ -10,10 +11,9 @@ const App = () => {
  const dispatch = useDispatch();
 
 
-
   return (
     <div className="App">
-      <h1>Test {isLoading}</h1>
+      <h1 className="text-red-700 font-bold">Test</h1>
 
       <div>{isLoading ? "Loading" : "Not loading"}</div>
 
